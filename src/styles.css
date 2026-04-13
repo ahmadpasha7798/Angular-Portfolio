@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-surface text-on-surface font-body antialiased;
+  }
+}
+
+@layer components {
+  /* Glassmorphism utility */
+  .glass {
+    @apply bg-surface/70 backdrop-blur-md;
+  }
+  
+  /* Primary CTA button with hero gradient */
+  .btn-primary {
+    @apply bg-hero-gradient rounded-md text-white border-0 outline-none hover:shadow-ambient transform hover:scale-105 transition-all duration-300;
+  }
+
+  /* Secondary button */
+  .btn-secondary {
+    @apply bg-surface-container-highest text-on-surface rounded-md border-0 outline-none hover:bg-surface-dim transition-all duration-300;
+  }
+
+  /* Feature Card Container */
+  .feature-card {
+    @apply p-8 bg-surface-container-low transition-all duration-300 rounded-lg;
+  }
+  
+  .feature-card:hover {
+    scale: 1.02;
+    @apply bg-surface-container-highest shadow-ambient;
+  }
+
+  /* Tech Chip */
+  .tech-chip {
+    @apply rounded-full bg-surface-container-high font-label text-sm uppercase tracking-widest px-4 py-1;
+  }
+}

@@ -1,0 +1,60 @@
+[33m❯[39m Building...
+[32m✔[39m Building...
+Application bundle generation failed. [2.301 seconds] - 2026-03-20T20:12:25.561Z
+
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG5002: Opening tag "span" not terminated.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/forms/forms.component.ts:193:108:
+[37m      193 │ ... AbstractControl) [32m<span class="text-[#ff7b72]=&gt;</span> {{'{'}}[37m
+          ╵                      [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG5002: Unexpected closing tag "span". It may happen when the tag has already been closed by another tag. For more info see https://www.w3.org/TR/html5/syntax.html#closing-elements-that-have-implied-end-tags[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/forms/forms.component.ts:194:39:
+[37m      194 │ ...lass="text-[#ff7b72]">return[32m</span>[37m service.<span class="text-...
+          ╵                                [32m~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG5002: Opening tag "span" not terminated.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/forms/forms.component.ts:195:53:
+[37m      195 │ ...n>(exists [32m<span class="text-[#ff7b72]=&gt;</span> (exists ? {{[37m...
+          ╵              [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG5002: Unexpected closing tag "span". It may happen when the tag has already been closed by another tag. For more info see https://www.w3.org/TR/html5/syntax.html#closing-elements-that-have-implied-end-tags[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/forms/forms.component.ts:195:149:
+[37m      195 │ ...s="text-[#a5d6ff]">duplicate[32m</span>[37m: <span class="text-[#79c0f...
+          ╵                                [32m~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG5002: Opening tag "span" not terminated.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/forms/forms.component.ts:196:56:
+[37m      196 │ .../span>(() [32m<span class="text-[#ff7b72]=&gt;</span> <span class=[37m...
+          ╵              [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG5002: Unexpected closing tag "span". It may happen when the tag has already been closed by another tag. For more info see https://www.w3.org/TR/html5/syntax.html#closing-elements-that-have-implied-end-tags[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/forms/forms.component.ts:196:127:
+[37m      196 │ ...an class="text-[#d2a8ff]">of[32m</span>[37m(<span class="text-[#79c0ff...
+          ╵                                [32m~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG5002: Invalid ICU message. Missing '}'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/services/services.component.ts:235:20:
+[37m      235 │                   [ [32m{[37m{'{'}} <span class="text-[#79c0ff]">provide<...
+          ╵                     [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG5002: Unexpected character "EOF" (Do you have an unescaped "{" in your template? Use "{{ '{' }}") to escape it.)[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/services/services.component.ts:271:2:
+[37m      271 │   [32m`[37m
+          ╵   [32m^[0m
+
+[39m[22m

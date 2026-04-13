@@ -1,5 +1,5 @@
 import { Component, input } from '@angular/core';
-import { Project } from '../../services/portfolio.service';
+import { Project } from '../../../core/services/portfolio.service';
 import { TechChipComponent } from '../tech-chip/tech-chip.component';
 
 @Component({

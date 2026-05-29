@@ -1,4 +1,4 @@
-import { Component, signal } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-dashboard',
@@ -138,10 +138,10 @@ import { Component, signal } from '@angular/core';
                 The Editorial system treats architectural components as first-class citizens. Every signal, every observable, and every pipe is tuned for high-performance enterprise delivery.
               </p>
               <div class="flex gap-2">
-                 <span class="font-label xs-text bg-surface-container-high px-3 py-1 rounded-sm text-on-surface-variant font-bold text-[10px]">Signals</span>
-                 <span class="font-label xs-text bg-surface-container-high px-3 py-1 rounded-sm text-on-surface-variant font-bold text-[10px]">SSR</span>
-                 <span class="font-label xs-text bg-surface-container-high px-3 py-1 rounded-sm text-on-surface-variant font-bold text-[10px]">Hydration</span>
-                 <span class="font-label xs-text bg-surface-container-high px-3 py-1 rounded-sm text-on-surface-variant font-bold text-[10px]">RxJS</span>
+                 <span class="font-label text-xs bg-surface-container-high px-3 py-1 rounded-sm text-on-surface-variant font-bold text-[10px]">Signals</span>
+                 <span class="font-label text-xs bg-surface-container-high px-3 py-1 rounded-sm text-on-surface-variant font-bold text-[10px]">SSR</span>
+                 <span class="font-label text-xs bg-surface-container-high px-3 py-1 rounded-sm text-on-surface-variant font-bold text-[10px]">Hydration</span>
+                 <span class="font-label text-xs bg-surface-container-high px-3 py-1 rounded-sm text-on-surface-variant font-bold text-[10px]">RxJS</span>
               </div>
            </div>
            

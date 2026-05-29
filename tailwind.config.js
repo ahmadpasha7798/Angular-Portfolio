@@ -7,8 +7,8 @@ module.exports = {
     extend: {
       colors: {
         primary: {
-          DEFAULT: '#af0025',
-          container: '#dd0031',
+          DEFAULT: '#cc002b',
+          container: '#a30022',
         },
         secondary: {
           DEFAULT: '#005faf',
@@ -28,7 +28,7 @@ module.exports = {
         },
         on: {
           surface: '#191c1d',
-          'surface-variant': '#5d3f3e',
+          'surface-variant': '#444c56',
         },
         outline: {
           DEFAULT: '#926e6d',

@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-tutorial',
   standalone: true,
+  imports: [RouterLink],
   template: `
     <div class="animate-fade-in-up min-h-screen pt-20 bg-white">
       <div class="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row min-h-[calc(100vh-5rem)]">
@@ -11,30 +13,30 @@ import { Component } from '@angular/core';
         <aside class="w-full md:w-64 flex-shrink-0 py-12 md:pr-8 md:border-r border-surface-container-high relative">
            <div class="sticky top-32">
               <div class="font-display font-bold text-sm text-on-surface mb-1">Tutorial</div>
-              <div class="font-label text-[10px] text-on-surface-variant uppercase tracking-widest mb-8 border-b border-surface-container-highest pb-4">v18.0</div>
+              <div class="font-label text-[10px] text-on-surface-variant uppercase tracking-widest mb-8 border-b border-surface-container-highest pb-4">v21.0</div>
               
               <nav class="space-y-1 font-body text-sm">
-                 <a href="#" class="flex items-center gap-3 px-3 py-2 text-on-surface-variant hover:text-primary transition-colors">
+                 <a routerLink="/" class="flex items-center gap-3 px-3 py-2 text-on-surface-variant hover:text-primary transition-colors">
                     <span class="w-1.5 h-1.5 rounded-full bg-surface-container-highest"></span> Introduction
                  </a>
-                 <a href="#" class="flex items-center gap-3 px-3 py-2 bg-surface-container-lowest text-[#cc002b] font-bold border-l-2 border-[#cc002b] -ml-px transition-colors">
+                 <a routerLink="/tutorial" class="flex items-center gap-3 px-3 py-2 bg-surface-container-lowest text-[#cc002b] font-bold border-l-2 border-[#cc002b] -ml-px transition-colors">
                     <span class="w-1.5 h-1.5 rounded-full bg-[#cc002b]"></span> Installation
                  </a>
-                 <a href="#" class="flex items-center gap-3 px-3 py-2 text-on-surface-variant hover:text-primary transition-colors">
-                    <span class="w-1.5 h-1.5 rounded-full bg-surface-container-highest"></span> CLI Tools
+                 <a routerLink="/architecture" class="flex items-center gap-3 px-3 py-2 text-on-surface-variant hover:text-primary transition-colors">
+                    <span class="w-1.5 h-1.5 rounded-full bg-surface-container-highest"></span> Components
                  </a>
-                 <a href="#" class="flex items-center gap-3 px-3 py-2 text-on-surface-variant hover:text-primary transition-colors">
-                    <svg class="w-4 h-4 opacity-50 pl-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"></path></svg> Project Structure
+                 <a routerLink="/signals" class="flex items-center gap-3 px-3 py-2 text-on-surface-variant hover:text-primary transition-colors">
+                    <svg class="w-4 h-4 opacity-50 pl-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg> Signals
                  </a>
-                 <a href="#" class="flex items-center gap-3 px-3 py-2 text-on-surface-variant hover:text-primary transition-colors">
-                    <svg class="w-4 h-4 opacity-50 pl-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg> Next Steps
+                 <a routerLink="/routing" class="flex items-center gap-3 px-3 py-2 text-on-surface-variant hover:text-primary transition-colors">
+                    <svg class="w-4 h-4 opacity-50 pl-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg> Routing
                  </a>
               </nav>
               
               <div class="mt-12">
-                 <button class="w-full bg-transparent border border-surface-container-highest font-label text-[10px] font-bold uppercase tracking-widest text-on-surface-variant py-3 rounded-sm hover:bg-surface-container-lowest transition-colors flex items-center justify-center gap-2">
-                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path></svg> View on Github
-                 </button>
+                 <a href="https://github.com/ahmadpasha7798/Angular-Portfolio" target="_blank" rel="noopener noreferrer" class="w-full bg-transparent border border-surface-container-highest font-label text-[10px] font-bold uppercase tracking-widest text-on-surface-variant py-3 rounded-sm hover:bg-surface-container-lowest transition-colors flex items-center justify-center gap-2">
+                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path></svg> View on GitHub
+                 </a>
               </div>
            </div>
         </aside>
@@ -64,7 +66,7 @@ import { Component } from '@angular/core';
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                        <div class="bg-[#f8f9fa] border-l-2 border-[#005faf] p-6 rounded-r-sm">
                           <h4 class="font-display font-bold text-on-surface mb-2">Node.js</h4>
-                          <p class="font-body text-[10px] text-on-surface-variant leading-relaxed">v18.13.0 or higher. Angular requires an active LTS or maintenance LTS version.</p>
+                          <p class="font-body text-[10px] text-on-surface-variant leading-relaxed">v20.x LTS or higher. Angular 21 requires an active LTS Node version.</p>
                        </div>
                        <div class="bg-[#f8f9fa] border-l-2 border-[#cc002b] p-6 rounded-r-sm">
                           <h4 class="font-display font-bold text-on-surface mb-2">Package Manager</h4>
@@ -173,12 +175,12 @@ import { Component } from '@angular/core';
               <p class="font-body text-sm text-on-surface-variant max-w-sm mx-auto mb-8 relative z-10">Now that your workspace is ready, let's explore how to create your first Standalone Component with Signals.</p>
               
               <div class="flex flex-col sm:flex-row justify-center items-center gap-4 relative z-10">
-                 <button class="w-full sm:w-auto bg-[#cc002b] hover:bg-[#a30022] text-white font-label text-xs font-bold uppercase tracking-widest px-8 py-4 rounded-sm transition-colors shadow-ambient flex items-center justify-center gap-2">
-                    Core Component Logic <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
-                 </button>
-                 <button class="w-full sm:w-auto bg-surface-container hover:bg-surface-container-high text-on-surface font-label text-xs font-bold uppercase tracking-widest px-8 py-4 rounded-sm transition-colors border border-surface-container-highest">
-                    Browse Showcase
-                 </button>
+                 <a routerLink="/architecture" class="w-full sm:w-auto bg-[#cc002b] hover:bg-[#a30022] text-white font-label text-xs font-bold uppercase tracking-widest px-8 py-4 rounded-sm transition-colors shadow-ambient flex items-center justify-center gap-2">
+                    Component Architecture <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                 </a>
+                 <a routerLink="/signals" class="w-full sm:w-auto bg-surface-container hover:bg-surface-container-high text-on-surface font-label text-xs font-bold uppercase tracking-widest px-8 py-4 rounded-sm transition-colors border border-surface-container-highest">
+                    Explore Signals
+                 </a>
               </div>
            </div>
            

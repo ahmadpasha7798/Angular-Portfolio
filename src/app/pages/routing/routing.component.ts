@@ -31,8 +31,8 @@ import { Component } from '@angular/core';
               <div class="w-3 h-3 rounded-full bg-[#27c93f]"></div>
            </div>
            <div class="flex-1 bg-[#f8f9fa] border border-surface-container-high rounded-sm px-4 py-1.5 font-mono text-[10px] text-on-surface-variant flex items-center justify-between">
-              <div><span class="text-surface-container-highest">https://</span>editorial_engineering<span class="font-bold text-on-surface">/routing</span><span class="text-[#cc002b]">?id=x547&amp;view=blueprint&amp;auth=true</span></div>
-              <svg class="w-3 h-3 text-surface-container-highest" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>
+              <div><span class="text-on-surface-variant/50">https://</span>pasha.dev<span class="font-bold text-on-surface">/routing</span><span class="text-[#cc002b]">?id=x547&amp;view=blueprint&amp;auth=true</span></div>
+              <svg class="w-3 h-3 text-on-surface-variant/40" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>
            </div>
         </div>
 
@@ -99,41 +99,41 @@ import { Component } from '@angular/core';
            
            <!-- Guard Simulator -->
            <div class="bg-[#11131e] rounded-sm p-8 flex flex-col shadow-xl">
-              <h2 class="font-display text-xl font-bold text-white mb-8 border-b border-surface-container-highlight/20 pb-4">Guard Simulator</h2>
+              <h2 class="font-display text-xl font-bold text-white mb-8 border-b border-white/20 pb-4">Guard Simulator</h2>
               
               <div class="space-y-6 flex-1">
                  <!-- CanActivate -->
-                 <div class="bg-surface-container-highlight/5 border border-surface-container-highlight/20 p-4 rounded-sm relative overflow-hidden group">
+                 <div class="bg-white/5 border border-white/20 p-4 rounded-sm relative overflow-hidden group">
                     <div class="absolute left-0 top-0 bottom-0 w-1 bg-[#cc002b]"></div>
                     <div class="pl-2">
                        <div class="flex justify-between items-center mb-2">
-                          <span class="font-label xs-text font-bold text-white uppercase tracking-widest">CANACTIVATE</span>
+                          <span class="font-label text-xs font-bold text-white uppercase tracking-widest">CANACTIVATE</span>
                           <span class="w-2 h-2 rounded-full bg-[#cc002b] animate-pulse"></span>
                        </div>
                        <p class="font-body text-[10px] text-white/50 mb-3 leading-relaxed">Restricting access to Admin paths based on JWT presence and role metadata.</p>
-                       <div class="w-full h-1 bg-surface-container-highest/20 rounded-full overflow-hidden">
+                       <div class="w-full h-1 bg-white/20 rounded-full overflow-hidden">
                           <div class="w-3/4 h-full bg-[#cc002b] rounded-full"></div>
                        </div>
                     </div>
                  </div>
                  
                  <!-- CanDeactivate -->
-                 <div class="bg-surface-container-highlight/5 border border-surface-container-highlight/20 p-4 rounded-sm relative overflow-hidden group">
+                 <div class="bg-white/5 border border-white/20 p-4 rounded-sm relative overflow-hidden group">
                     <div class="absolute left-0 top-0 bottom-0 w-1 bg-[#005faf]"></div>
                     <div class="pl-2">
                        <div class="flex justify-between items-center mb-2">
-                          <span class="font-label xs-text font-bold text-white uppercase tracking-widest">CANDEACTIVATE</span>
+                          <span class="font-label text-xs font-bold text-white uppercase tracking-widest">CANDEACTIVATE</span>
                           <span class="w-2 h-2 rounded-full bg-[#005faf] animate-pulse"></span>
                        </div>
                        <p class="font-body text-[10px] text-white/50 mb-3 leading-relaxed">Intercepting navigation attempts when a form has unsaved state changes.</p>
-                       <div class="w-full h-1 bg-surface-container-highest/20 rounded-full overflow-hidden">
+                       <div class="w-full h-1 bg-white/20 rounded-full overflow-hidden">
                           <div class="w-[90%] h-full bg-[#005faf] rounded-full"></div>
                        </div>
                     </div>
                  </div>
               </div>
               
-              <button class="w-full bg-[#1e2235] hover:bg-[#2a2f4c] text-white font-label xs-text font-bold uppercase tracking-[0.2em] py-4 rounded-sm transition-colors border border-surface-container-highlight/20 mt-6">
+              <button class="w-full bg-[#1e2235] hover:bg-[#2a2f4c] text-white font-label text-xs font-bold uppercase tracking-[0.2em] py-4 rounded-sm transition-colors border border-white/20 mt-6">
                 Run Simulator
               </button>
            </div>

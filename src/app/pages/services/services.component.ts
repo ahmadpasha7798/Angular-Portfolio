@@ -27,7 +27,7 @@ import { Component } from '@angular/core';
                  </div>
                  <div>
                     <h3 class="font-display font-bold text-on-surface text-sm">Service Strategy</h3>
-                    <div class="font-label xs-text text-on-surface-variant tracking-widest uppercase">Root level vs. Module vs. Component level</div>
+                    <div class="font-label text-xs text-on-surface-variant tracking-widest uppercase">Root level vs. Module vs. Component level</div>
                  </div>
               </div>
               
@@ -45,7 +45,7 @@ import { Component } from '@angular/core';
         <!-- Injection Resolution Hierarchy -->
         <div class="mb-32 flex flex-col items-center">
            <h2 class="font-display text-2xl font-bold text-on-surface mb-2 text-center">Injection Resolution Hierarchy</h2>
-           <p class="font-label xs-text text-on-surface-variant uppercase tracking-[0.2em] mb-12 text-center font-bold">From global platform tokens to local view providers</p>
+           <p class="font-label text-xs text-on-surface-variant uppercase tracking-[0.2em] mb-12 text-center font-bold">From global platform tokens to local view providers</p>
            
            <div class="w-full max-w-2xl relative">
               <div class="absolute inset-y-0 left-8 md:left-12 w-1 l bg-[#cc002b]/10 rounded-full z-0"></div>

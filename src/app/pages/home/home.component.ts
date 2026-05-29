@@ -26,8 +26,6 @@ import { RouterLink } from '@angular/router';
           </div>
           <div class="relative flex justify-center lg:justify-end">
              <div class="w-full max-w-lg aspect-square bg-white rounded-xl shadow-2xl relative overflow-hidden flex items-center justify-center p-8 border border-white">
-                <!-- Mac-like Window Controls Top Right? Wait, image shows top right has faint lines. Let's replicate standard UI -->
-                
                 <!-- Center Red Graphic: Molecule cluster -->
                 <div class="relative flex items-center justify-center">
                   <svg class="w-48 h-48 text-[#cc002b] opacity-80" viewBox="0 0 100 100" fill="currentColor">
@@ -76,9 +74,9 @@ import { RouterLink } from '@angular/router';
                   <p class="font-body text-on-surface-variant text-sm mb-12 max-w-sm leading-relaxed">Implementation of sophisticated Signal-based state management, custom RxJS operators, and high-performance change detection strategies.</p>
                 </div>
                 <div class="flex gap-2">
-                   <span class="font-label xs-text uppercase tracking-widest bg-surface-container-highest px-3 py-1 rounded-sm text-on-surface-variant font-bold text-[10px]">SIGNALS</span>
-                   <span class="font-label xs-text uppercase tracking-widest bg-surface-container-highest px-3 py-1 rounded-sm text-on-surface-variant font-bold text-[10px]">RXJS</span>
-                   <span class="font-label xs-text uppercase tracking-widest bg-surface-container-highest px-3 py-1 rounded-sm text-on-surface-variant font-bold text-[10px]">ZONLESS</span>
+                   <span class="font-label text-xs uppercase tracking-widest bg-surface-container-highest px-3 py-1 rounded-sm text-on-surface-variant font-bold text-[10px]">SIGNALS</span>
+                   <span class="font-label text-xs uppercase tracking-widest bg-surface-container-highest px-3 py-1 rounded-sm text-on-surface-variant font-bold text-[10px]">RXJS</span>
+                   <span class="font-label text-xs uppercase tracking-widest bg-surface-container-highest px-3 py-1 rounded-sm text-on-surface-variant font-bold text-[10px]">ZONELESS</span>
                  </div>
              </div>
 
@@ -107,7 +105,7 @@ import { RouterLink } from '@angular/router';
                     <span class="font-mono text-xs font-bold">[]</span>
                   </div>
                   <h3 class="font-display text-xl font-bold text-on-surface mb-4">Enterprise Architecture</h3>
-                  <p class="font-body text-on-surface-variant text-sm mb-8 leading-relaxed">Modular, scalable patterns using Nx workspaces, strictly typed interfaces, and clean code principles designed for large-scale engineering teams.</p>
+                  <p class="font-body text-on-surface-variant text-sm mb-8 leading-relaxed">Modular, scalable patterns using standalone components, strictly typed interfaces, and clean architecture principles designed for large-scale engineering teams.</p>
                   <a routerLink="/architecture" class="text-secondary font-label text-xs font-bold uppercase tracking-widest hover:underline flex items-center gap-2">Read Technical Blueprint <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></a>
                 </div>
                 <div class="flex-1 w-full max-w-lg flex items-center justify-end gap-2">
@@ -132,41 +130,33 @@ import { RouterLink } from '@angular/router';
       <!-- TECH BANNER -->
       <section class="border-y border-surface-container-high bg-[#f8f9fa]">
          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 flex flex-wrap justify-center sm:justify-between items-center gap-10 font-display text-[11px] font-bold text-on-surface-variant uppercase tracking-[0.2em] opacity-80">
-            <span>TypeScript 5.0</span>
-            <span>Nx Monorepo</span>
-            <span>Angular 18</span>
-            <span>Tailwind CSS</span>
-            <span>Jest Testing</span>
+            <span>TypeScript 5.9</span>
+            <span>Angular 21</span>
+            <span>Standalone Components</span>
+            <span>Tailwind CSS 3.4</span>
+            <span>Angular Signals</span>
          </div>
       </section>
 
       <!-- CTA -->
       <section class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
          <div class="bg-[#cc002b] rounded-[40px] p-12 md:p-20 text-center text-white shadow-2xl relative overflow-hidden">
-            <h2 class="font-display text-4xl md:text-5xl font-bold mb-6 relative z-10 leading-tight">Ready to elevate your Angular <br>stack?</h2>
-            <p class="font-body text-base text-white/90 mb-10 max-w-lg mx-auto relative z-10 leading-relaxed font-light">Join our engineering mailing list for deep dives into the latest architectural patterns and performance hacks.</p>
+            <h2 class="font-display text-4xl md:text-5xl font-bold mb-6 relative z-10 leading-tight">Explore the full source<br>on GitHub.</h2>
+            <p class="font-body text-base text-white/90 mb-10 max-w-lg mx-auto relative z-10 leading-relaxed font-light">Every pattern, component, and architectural decision in this portfolio is open-source. Dive into the code, fork it, or use it as a reference.</p>
             
-            <form class="flex flex-col sm:flex-row max-w-md mx-auto gap-4 relative z-10 justify-center">
-              <input type="email" placeholder="engineer@domain.com" class="bg-[#B30025] text-white placeholder-white/50 px-6 py-4 rounded-sm font-body text-sm outline-none w-full sm:w-64">
-              <button class="bg-white text-[#cc002b] font-label font-bold uppercase tracking-widest text-xs px-8 py-4 rounded-sm hover:bg-gray-100 transition-colors">SUBSCRIBE</button>
-            </form>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center relative z-10">
+              <a href="https://github.com/ahmadpasha7798/Angular-Portfolio" target="_blank" rel="noopener noreferrer"
+                 class="inline-flex items-center justify-center gap-2 bg-white text-[#cc002b] font-label font-bold uppercase tracking-widest text-xs px-8 py-4 rounded-sm hover:bg-gray-100 transition-colors">
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path></svg>
+                View Repository
+              </a>
+              <a routerLink="/tutorial"
+                 class="inline-flex items-center justify-center gap-2 bg-transparent border border-white/50 hover:border-white text-white font-label font-bold uppercase tracking-widest text-xs px-8 py-4 rounded-sm transition-colors">
+                Start Tutorial
+              </a>
+            </div>
          </div>
       </section>
-      
-      <!-- FOOTER -->
-      <footer class="border-t border-surface-container-highest py-12 bg-surface">
-         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
-            <div>
-               <div class="font-display font-bold text-xs text-on-surface mb-2">The Engineering Editorial</div>
-               <p class="font-body text-[10px] text-on-surface-variant">&copy; 2024 The Engineering Editorial. Built with Angular & Signals.</p>
-            </div>
-            <div class="flex gap-8 font-body text-[10px] text-on-surface-variant">
-               <a href="#" class="hover:text-primary transition-colors">Github Repository</a>
-               <a href="#" class="hover:text-primary transition-colors">Technical Architecture Layout</a>
-               <a href="#" class="hover:text-primary transition-colors">API Services Details</a>
-            </div>
-         </div>
-      </footer>
     </div>
   `
 })

@@ -46,14 +46,14 @@ import { Component } from '@angular/core';
                     
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 pl-2 relative z-10">
                        <div>
-                          <label class="block font-label xs-text text-on-surface-variant uppercase tracking-widest font-bold mb-4">Skill Name</label>
+                          <label class="block font-label text-xs text-on-surface-variant uppercase tracking-widest font-bold mb-4">Skill Name</label>
                           <input type="text" value="Angular Signals" class="w-full bg-transparent border-b-2 border-[#005faf] text-on-surface font-body text-sm py-2 focus:outline-none placeholder-surface-container-highest">
                           <div class="text-[#005faf] text-[10px] font-body mt-2 flex items-center gap-1.5 font-medium">
                              <div class="w-1.5 h-1.5 rounded-full bg-[#005faf]"></div> * This is valid
                           </div>
                        </div>
                        <div>
-                          <label class="block font-label xs-text text-on-surface-variant uppercase tracking-widest font-bold mb-4">Expertise Level</label>
+                          <label class="block font-label text-xs text-on-surface-variant uppercase tracking-widest font-bold mb-4">Expertise Level</label>
                           <div class="relative">
                              <select class="w-full bg-transparent border-b border-surface-container-highest text-on-surface font-body text-sm py-2 appearance-none focus:outline-none focus:border-[#005faf] transition-colors cursor-pointer pb-2.5">
                                 <option>Architect</option>
@@ -81,7 +81,7 @@ import { Component } from '@angular/core';
                     
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 pl-2 relative z-10">
                        <div>
-                          <label class="block font-label xs-text text-on-surface-variant uppercase tracking-widest font-bold mb-4">Skill Name</label>
+                          <label class="block font-label text-xs text-on-surface-variant uppercase tracking-widest font-bold mb-4">Skill Name</label>
                           <input type="text" placeholder="e.g. Docker" class="w-full bg-transparent border-b-2 border-[#cc002b] text-on-surface font-body text-sm py-2 focus:outline-none placeholder-surface-container-highest">
                           <div class="text-[#cc002b] text-[10px] font-body mt-2 flex items-center gap-1.5 font-medium">
                              <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> ! This field is required
@@ -103,7 +103,7 @@ import { Component } from '@angular/core';
               <!-- Output Watcher -->
               <div class="bg-[#11131e] rounded-sm p-8 shadow-2xl relative overflow-hidden flex-1 border border-[#2d3142]">
                  <div class="absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-transparent via-[#2d3142] to-transparent"></div>
-                 <h4 class="font-label xs-text font-bold text-white uppercase tracking-widest mb-8 border-b border-white/10 pb-4">Form Control Status</h4>
+                 <h4 class="font-label text-xs font-bold text-white uppercase tracking-widest mb-8 border-b border-white/10 pb-4">Form Control Status</h4>
                  
                  <div class="space-y-4 mb-8">
                     <div class="flex justify-between items-center text-[10px] font-mono font-bold tracking-widest text-white/50">
@@ -167,7 +167,7 @@ import { Component } from '@angular/core';
         <!-- Custom Async Section Row -->
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-24 items-center">
            <div>
-              <span class="font-label xs-text text-[#005faf] uppercase tracking-widest font-bold mb-4 block">ARCHITECTURE LOGIC</span>
+              <span class="font-label text-xs text-[#005faf] uppercase tracking-widest font-bold mb-4 block">ARCHITECTURE LOGIC</span>
               <h2 class="font-display text-3xl font-bold text-on-surface mb-6">Custom Async Validator</h2>
               <p class="font-body text-sm text-on-surface-variant mb-8 leading-relaxed">
                 Implementation of an asynchronous validator that checks the Angular Architecture Registry for duplicate skill entries. It utilizes <span class="text-[#cc002b] font-mono bg-[#cc002b]/5 px-1 rounded">debounceTime</span> and <span class="text-[#cc002b] font-mono bg-[#cc002b]/5 px-1 rounded">switchMap</span> to prevent excessive API calls.

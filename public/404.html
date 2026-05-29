@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Pasha.Dev | Angular Architecture Showcase</title>
+  <script>
+    // SPA redirect for GitHub Pages
+    // Encodes the current path as a query param so index.html can restore it
+    // after Angular bootstraps, preserving deep-link navigation.
+    // slice(0, 2) keeps the repo base path segment (/Angular-Portfolio).
+    // Update this value if the repository name or deployment base path changes.
+    const l = window.location;
+    l.replace(
+      l.protocol + '//' + l.host +
+      l.pathname.split('/').slice(0, 2).join('/') + // keep /Angular-Portfolio
+      '/?p=' + l.pathname.split('/').slice(2).join('/').replace(/&/g, '~and~') +
+      (l.search ? '&q=' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+      l.hash
+    );
+  </script>
+</head>
+<body></body>
+</html>

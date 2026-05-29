@@ -12,6 +12,21 @@
   <meta property="og:type" content="website">
   <meta name="theme-color" content="#cc002b">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script>
+    // Restore deep-link path encoded by 404.html
+    (function () {
+      const params = new URLSearchParams(window.location.search);
+      const p = params.get('p');
+      if (p) {
+        const path = '/' + p.replace(/~and~/g, '&');
+        const query = params.get('q') ? '?' + params.get('q').replace(/~and~/g, '&') : '';
+        window.history.replaceState(
+          null, null,
+          window.location.pathname.replace(/\/?$/, '') + path + query + window.location.hash
+        );
+      }
+    })();
+  </script>
 </head>
 <body>
   <app-root></app-root>
